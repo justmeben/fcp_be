@@ -19,7 +19,6 @@ def pd(s):
 
 class VoteView(APIView):
     def get(self, request, voter):
-        time.sleep(1)
         sunday = (datetime.now() - timedelta(days=datetime.now().weekday() + 1)).date()
         saturday = (datetime.now() + timedelta(days=6)).date()
         votes = Vote.objects.all()
@@ -39,7 +38,6 @@ class VoteView(APIView):
         return Response(days)
 
     def post(self, request, voter, date_str):
-        time.sleep(1)
         date = pd(date_str)
         if Vote.objects.filter(voter=voter, date=fd(date)).exists():
             return Response('Exists', 400)
@@ -50,7 +48,6 @@ class VoteView(APIView):
         return Response()
 
     def delete(self, request, voter, vote_id):
-        time.sleep(1)
         if not Vote.objects.filter(voter=voter, id=vote_id).exists():
             return Response('Does not exist', 400)
         Vote.objects.filter(voter=voter, id=vote_id).delete()
