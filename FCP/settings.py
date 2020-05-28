@@ -25,7 +25,10 @@ SECRET_KEY = 'oz11oa9(3ie@&4&$=75#_)c8x+8r&7h)=ky(lu+pn4v!kzlg_f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.243.245.127', 'http://34.243.245.127', 'https://34.243.245.127']
+ALLOWED_HOSTS = ['34.243.245.127', 'http://34.243.245.127', 'https://34.243.245.127',
+                 'lb2-c3a7569f3ecce3e1.elb.eu-west-1.amazonaws.com', 'https://lb2-c3a7569f3ecce3e1.elb.eu-west-1.amazonaws.com',
+                 "http://lb2-c3a7569f3ecce3e1.elb.eu-west-1.amazonaws.com", 'soccer.bentzy.io', 'https://soccer.bentzy.io',
+                 'http://soccer.bentzy.io']
 
 
 # Application definition
