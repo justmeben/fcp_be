@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['34.243.245.127', 'http://34.243.245.127', 'https://34.243.245.127',
                  'lb2-c3a7569f3ecce3e1.elb.eu-west-1.amazonaws.com', 'https://lb2-c3a7569f3ecce3e1.elb.eu-west-1.amazonaws.com',
                  "http://lb2-c3a7569f3ecce3e1.elb.eu-west-1.amazonaws.com", 'soccer.bentzy.io', 'https://soccer.bentzy.io',
-                 'http://soccer.bentzy.io']
+                 'http://soccer.bentzy.io', 'https://socap.bentzy.io', 'http://socap.bentzy.io', 'socap.bentzy.io']
 
 
 # Application definition
